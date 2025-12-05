@@ -1,0 +1,11 @@
+name: Automatic Test Execution
+on:
+  pull_request:
+    types: [opened, synchronize, reopened]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Mock a test
+        run: echo "This is a mock test step."
